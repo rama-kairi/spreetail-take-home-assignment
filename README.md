@@ -572,9 +572,6 @@ The system uses `docs/ce_exercise_threads.json` containing 5 email threads with 
 
 - [BRIEF_NOTES.md](./BRIEF_NOTES.md) - Tech stack, NLP choice, scaling plan (<1 page)
 - [docs/instructions.md](./docs/instructions.md) - Exercise requirements
-- [docs/ASSESSMENT_ANALYSIS.md](./docs/ASSESSMENT_ANALYSIS.md) - Detailed analysis
-- [backend/README.md](./backend/README.md) - Backend API documentation
-- [frontend/README.md](./frontend/README.md) - Frontend documentation
 
 ## License
 
