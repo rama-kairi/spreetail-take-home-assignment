@@ -1,0 +1,15 @@
+pre-commit:
+  parallel: true
+  commands:
+    frontend-biome:
+      run: cd frontend && bun biome check --write $(echo "{staged_files}" | sed 's|^frontend/||')
+      glob: "frontend/**/*.{js,jsx,ts,tsx,json,css}"
+      stage_fixed: true
+    backend-ruff:
+      run: cd backend && uv run ruff check {staged_files}
+      glob: "backend/**/*.py"
+      stage_fixed: true
+    backend-ruff-format:
+      run: cd backend && uv run ruff format {staged_files}
+      glob: "backend/**/*.py"
+      stage_fixed: true

@@ -1,0 +1,148 @@
+{
+	// Editor Settings
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "explicit",
+		"source.organizeImports.biome": "explicit"
+	},
+	"editor.rulers": [80, 120],
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true,
+	"editor.detectIndentation": false,
+	"editor.trimAutoWhitespace": true,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+
+	// File Associations
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+
+	// TypeScript/JavaScript Settings
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+
+	// Python Settings
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "explicit",
+			"source.organizeImports": "explicit"
+		}
+	},
+
+	// Python Language Server
+	"python.analysis.typeCheckingMode": "basic",
+	"python.analysis.autoImportCompletions": true,
+	"python.analysis.diagnosticMode": "workspace",
+	"python.linting.enabled": true,
+	"python.linting.ruffEnabled": true,
+	"python.linting.ruffPath": "${workspaceFolder}/backend/.venv/bin/ruff",
+	"python.formatting.provider": "none",
+	"python.languageServer": "None",
+
+	// Ruff Settings
+	"ruff.enable": true,
+	"ruff.organizeImports": true,
+	"ruff.fixAll": true,
+	"ruff.lint.enable": true,
+
+	// Biome Settings
+	"biome.enabled": true,
+
+	// Tailwind CSS Settings
+	"tailwindCSS.experimental.classRegex": [
+		["cn\\(([^)]*)\\)", "(?:'|\"|`)([^\"'`]*)(?:'|\"|`)"],
+		["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+	],
+	"tailwindCSS.includeLanguages": {
+		"typescript": "typescript",
+		"typescriptreact": "typescriptreact"
+	},
+	"tailwindCSS.files.exclude": [
+		"**/.git/**",
+		"**/node_modules/**",
+		"**/.venv/**"
+	],
+
+	// File Exclusions
+	"files.exclude": {
+		"**/__pycache__": true,
+		"**/*.pyc": true,
+		"**/.pytest_cache": true,
+		"**/.mypy_cache": true,
+		"**/.ruff_cache": true,
+		"**/node_modules": false,
+		"**/.venv": false
+	},
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/**": true,
+		"**/.venv/**": true,
+		"**/__pycache__/**": true,
+		"**/.pytest_cache/**": true,
+		"**/.ruff_cache/**": true,
+		"**/dist/**": true,
+		"**/.vite/**": true
+	},
+
+	// Search Exclusions
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/.venv": true,
+		"**/__pycache__": true,
+		"**/*.pyc": true,
+		"**/.pytest_cache": true,
+		"**/.mypy_cache": true,
+		"**/.ruff_cache": true,
+		"**/dist": true,
+		"**/.vite": true,
+		"**/bun.lockb": true,
+		"**/uv.lock": true
+	},
+
+	// Workspace Settings
+	"files.eol": "\n",
+	"files.encoding": "utf8",
+
+	// Path Aliases for TypeScript
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.suggest.autoImports": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+
+	// ESLint (if still using alongside Biome)
+	"eslint.enable": false,
+
+	// Git Settings
+	"git.ignoreLimitWarning": true,
+
+	// Terminal Settings
+	"terminal.integrated.defaultProfile.osx": "zsh",
+	"terminal.integrated.cwd": "${workspaceFolder}"
+}

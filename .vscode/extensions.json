@@ -1,0 +1,28 @@
+{
+	"recommendations": [
+		// Python
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"charliermarsh.ruff",
+
+		// TypeScript/JavaScript
+		"biomejs.biome",
+
+		// Tailwind CSS
+		"bradlc.vscode-tailwindcss",
+
+		// General
+		"editorconfig.editorconfig",
+		"ms-vscode.vscode-typescript-next",
+
+		// Git
+		"eamodio.gitlens",
+
+		// Markdown
+		"yzhang.markdown-all-in-one"
+	],
+	"unwantedRecommendations": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode"
+	]
+}
